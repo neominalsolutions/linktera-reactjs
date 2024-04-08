@@ -7,36 +7,55 @@ import {
 	BrowserRouter,
 	RouterProvider,
 	createBrowserRouter,
+	Outlet,
+	Link,
 } from 'react-router-dom';
 import ClassComponentSamplePage from './pages/ClassComponentSamplePage';
 // V6 React Router Dom
 const router = createBrowserRouter([
 	{
 		path: '',
-		Component: App,
+		Component: App, // ilk istek geldiğinde App componente yönlenip sayfaları APP component üzerinden dinamik olarak doma yüklemek.
+		children: [
+			{
+				path: 'class-component',
+				Component: ClassComponentSamplePage,
+			},
+			{
+				path: 'function-component',
+				Component: null,
+			},
+			{
+				path: 'ui-kit-component',
+			},
+			{
+				path: 'local-state',
+				Component: null,
+			},
+		],
 	},
 	{
-		path: 'class-component',
-		Component: ClassComponentSamplePage,
-	},
-	{
-		path: 'function-component',
-		Component: null,
-	},
-	{
-		path: 'ui-kit-component',
-	},
-	{
-		path: 'local-state',
-		Component: null,
+		path: 'admin',
+		element: (
+			<>
+				Admin Page
+				<Outlet />
+			</>
+		),
+		children: [
+			{
+				path: 'users',
+				element: <>Admin Users</>,
+			},
+		],
 	},
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-	<React.StrictMode>
+	<>
 		<RouterProvider router={router} />
-	</React.StrictMode>
+	</>
 );
 
 // If you want to start measuring performance in your app, pass a function
