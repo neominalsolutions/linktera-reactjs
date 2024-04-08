@@ -16,7 +16,11 @@ function Variables() {
 		return <>{name}</>;
 	}
 
-	return <div>{name}</div>;
+	return (
+		<>
+			<div>{name}</div>
+		</>
+	);
 }
 
 export default Variables;

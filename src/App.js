@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import Variables from './ecmascripts/Variables';
+import ArrowFunction from './ecmascripts/ArrowFunctions';
+import EqualsOperators from './ecmascripts/EqualsOperators';
+import ESArrays from './ecmascripts/ESArrays';
 // export edilen componentleri başka bir js dosyasında import ederek kullanabiliyoruz.
 
 function App() {
@@ -13,6 +16,9 @@ function App() {
 	return (
 		<div style={{ padding: '20px' }}>
 			<Variables />
+			<ArrowFunction />
+			<EqualsOperators />
+			<ESArrays />
 		</div>
 	);
 }
