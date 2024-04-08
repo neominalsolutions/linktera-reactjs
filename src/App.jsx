@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import Variables from './ecmascripts/Variables';
 import ArrowFunction from './ecmascripts/ArrowFunctions';
-import EqualsOperators from './ecmascripts/EqualsOperators';
 import ESArrays from './ecmascripts/ESArrays';
+import ESClasses from './ecmascripts/ESClasses';
+import EqualsOperators from './ecmascripts/EqualsOperators';
+import Variables from './ecmascripts/Variables';
 // export edilen componentleri başka bir js dosyasında import ederek kullanabiliyoruz.
 
 function App() {
@@ -13,12 +13,15 @@ function App() {
 	// promise (async call)
 	// asyc await
 
+	// const h = new Human();
+
 	return (
 		<div style={{ padding: '20px' }}>
 			<Variables />
 			<ArrowFunction />
 			<EqualsOperators />
 			<ESArrays />
+			<ESClasses />
 		</div>
 	);
 }
