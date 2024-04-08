@@ -1,25 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Variables from './ecmascripts/Variables';
+// export edilen componentleri başka bir js dosyasında import ederek kullanabiliyoruz.
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	// arrow functions
+	// spread operators
+	// class
+	// promise (async call)
+	// asyc await
+
+	return (
+		<div style={{ padding: '20px' }}>
+			<Variables />
+		</div>
+	);
 }
 
 export default App;
