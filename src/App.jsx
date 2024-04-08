@@ -1,5 +1,6 @@
 import './App.css';
 import ArrowFunction from './ecmascripts/ArrowFunctions';
+import DefaultRestOperators from './ecmascripts/DefaultRestOperators';
 import ESArrays from './ecmascripts/ESArrays';
 import ESClasses from './ecmascripts/ESClasses';
 import EqualsOperators from './ecmascripts/EqualsOperators';
@@ -22,6 +23,7 @@ function App() {
 			<EqualsOperators />
 			<ESArrays />
 			<ESClasses />
+			<DefaultRestOperators />
 		</div>
 	);
 }
