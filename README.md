@@ -1,3 +1,10 @@
+# Folder Structure
+
+components: Page componentler içerisinde kullanılan ortak componentleri geliştiridğimiz klasör. UI-Kit componentler burada bulunur (Label,Button,Picture)
+
+pages: Componentlere path üzerinden yönlendirme yapıp, sayfalarımız oluşurutuğum componentler. (Routing Params, Query Params gibi yapılar bu componetler içinde bulunur.)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
